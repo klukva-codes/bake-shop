@@ -1,3 +1,28 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+}
+
 :root {
   --bakery-landing-1-background: #faf4ea;
   --bakery-landing-1-s1: #31261a;
@@ -9,6 +34,13 @@
 /* Base */
 body {
   color: var(--bakery-landing-1-s1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+address {
+  font-style: normal;
 }
 
 ul {
@@ -18,12 +50,13 @@ ul {
 /* Button */
 .button {
   color: var(--bakery-landing-1-background);
+  font-weight: 600;
   background-color: var(--bakery-landing-1-c2);
   border: 2px solid var(--bakery-landing-1-c2);
   border-radius: 8px;
-  padding: 16px 32px;
-  width: 238px;
-  height: 59px;
+  /* padding: 16px 32px; */
+  /* width: 238px;
+  height: 59px; */
   cursor: pointer;
 }
 
@@ -35,15 +68,22 @@ ul {
 /* Link */
 .link {
   color: var(--bakery-landing-1-background);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--bakery-landing-1-c2);
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--bakery-landing-1-background);
+  font-weight: 900;
+  font-size: 128px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-title .accent {
@@ -56,7 +96,62 @@ ul {
   background-color: var(--bakery-landing-1-c2);
 }
 
+.advantages-item {
+  font-weight: 300;
+  font-size: 20px;
+}
+
 /* Title section */
+.section-title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--bakery-landing-1-s3);
+}
+
+/* Tradition section */
+.traditions-text .brand {
+  color: var(--bakery-landing-1-c2);
+  font-weight: 600;
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
+}
+
+/* Chefs section */
+.chef-title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* Formats section */
+.format-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.format-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Footer */
+.address-link {
+  color: var(--bakery-landing-1-background);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--bakery-landing-1-c2);
+}
+
+.address-copyright {
+  color: var(--bakery-landing-1-s4);
+  font-size: 14px;
 }
