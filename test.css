@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  border: 8px solid gray;
+  margin: 10px;
+}
